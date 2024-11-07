@@ -1,0 +1,90 @@
+{
+  "cells": [
+    {
+      "id": "1",
+      "value": "Animal",
+      "style": "rounded=0;whiteSpace=wrap;html=1;",
+      "vertex": true,
+      "parent": "0",
+      "geometry": {
+        "x": 150,
+        "y": 80,
+        "width": 140,
+        "height": 100,
+        "as": "geometry"
+      }
+    },
+    {
+      "id": "2",
+      "value": "Cat",
+      "style": "rounded=0;whiteSpace=wrap;html=1;",
+      "vertex": true,
+      "parent": "0",
+      "geometry": {
+        "x": 50,
+        "y": 200,
+        "width": 100,
+        "height": 60,
+        "as": "geometry"
+      }
+    },
+    {
+      "id": "3",
+      "value": "Dog",
+      "style": "rounded=0;whiteSpace=wrap;html=1;",
+      "vertex": true,
+      "parent": "0",
+      "geometry": {
+        "x": 250,
+        "y": 200,
+        "width": 100,
+        "height": 60,
+        "as": "geometry"
+      }
+    },
+    {
+      "id": "4",
+      "value": "print()",
+      "style": "text;strokeColor=none;fillColor=none;rounded=0;",
+      "vertex": true,
+      "parent": "0",
+      "geometry": {
+        "x": 150,
+        "y": 130,
+        "width": 140,
+        "height": 20,
+        "as": "geometry"
+      }
+    },
+    {
+      "id": "5",
+      "edge": true,
+      "source": "2",
+      "target": "1",
+      "parent": "0",
+      "style": "endArrow=none;html=1;rounded=0;orthogonalLoop=1;",
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50,
+        "as": "geometry"
+      }
+    },
+    {
+      "id": "6",
+      "edge": true,
+      "source": "3",
+      "target": "1",
+      "parent": "0",
+      "style": "endArrow=none;html=1;rounded=0;orthogonalLoop=1;",
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50,
+        "as": "geometry"
+      }
+    }
+  ]
+}
