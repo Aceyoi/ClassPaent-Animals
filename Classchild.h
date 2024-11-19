@@ -27,16 +27,20 @@ public:
 
 	// Виртуальный метод делает класс абстрактным
 	virtual void print() const = 0;
-
-	// Виртуальный деструктор
+	/*
+	virtual - метод может быть переопределён в классе-наследнике
+	const - метод не изменяет состояние объекта
+	= 0 - обязательно должен быть реализован в классе-наследнике
+	*/
+		// Виртуальный деструктор
 	virtual ~Animal() {}
 
 	// Конструктор копирования
 	Animal(const Animal& other)
-		: name(other.name), breed(other.breed), age(other.age) {}
+		: name(other.name), breed(other.breed), age(other.age) {} //other представляет собой ссылку на объект класса Animal
 
 	// Конструктор перемещения
-	Animal(Animal&& other) noexcept
+	Animal(Animal&& other) noexcept // noexcept говорит что этот метод не будет выбрасывать исключений
 		: name(other.name), breed(other.breed), age(other.age) {
 		other.name = " ";
 		other.breed = " ";
@@ -85,7 +89,7 @@ public:
 	}
 
 	//Методы
-	void print() const override {
+	void print() const override {// override используется для явного указания, что метод переопределяет виртуальный метод базового класса
 		cout << "Это кошка!" << endl;
 		cout << "Кличка: " << name << endl
 			<< "Возраст: " << age << endl
@@ -112,7 +116,7 @@ public:
 	}
 
 	//Методы
-	void print() const override{
+	void print() const override{ // override используется для явного указания, что метод переопределяет виртуальный метод базового класса
 		cout << "Это собака!" << endl;
 		cout << "Кличка: " << name << endl
 			<< "Возраст: " << age << endl
